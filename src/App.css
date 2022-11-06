@@ -47,3 +47,7 @@
   background: transparent;
   border: 5px soild var(--orange); /* known bug, boarder not working*/
 }
+
+::-webkit-scrollbar{
+  display: none;
+}
