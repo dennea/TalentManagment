@@ -1,0 +1,21 @@
+.PortfolioCard {
+    width: 89%;
+    border-radius: 0.7rem;
+    overflow-x: clip;
+    background: var(--cardColor);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding-left: 1rem;
+    padding-top: 1rem;
+}
+
+.portImage>img{
+    width: 210px;
+    height: 210px;
+    border-radius: 0.4rem;
+    object-fit: cover;
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+}

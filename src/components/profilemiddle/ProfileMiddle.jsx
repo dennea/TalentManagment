@@ -1,4 +1,5 @@
 import React from 'react'
+import PortfolioCard from '../portfoliocard/PortfolioCard'
 import ProfileCard from '../profilecard/ProfileCard'
 import './ProfileMiddle.css'
 
@@ -11,6 +12,7 @@ const ProfileMiddle = () => {
                 <div className='vl'></div>
                 <span> <b>Posts</b> </span>
             </div>
+            <PortfolioCard />
         </div>
     )
 }
