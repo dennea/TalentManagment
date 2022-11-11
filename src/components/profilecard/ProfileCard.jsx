@@ -21,19 +21,21 @@ const ProfileCard = () => {
                 <div>
                     <div className='follow'>
                         <span>400</span>
-                        <span>Followings</span>
+                        <span>Connections</span>
                     </div>
                     <div className='vl'></div>
                     <div className='follow'>
-                        <span>100</span>
-                        <span>Followers</span>
+                        <span>4</span>
+                        <span>Groups</span>
                     </div>
                 </div>
                 <hr />
             </div>
-
             <span>
-                My Profile
+                I AM AWESOME
+            </span>
+            <span>
+                My Profile {/* TODO: Hide this in the actual profile */}
             </span>
         </div>
     )
