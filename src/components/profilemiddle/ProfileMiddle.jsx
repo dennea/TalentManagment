@@ -1,18 +1,22 @@
-import React from 'react'
+import React,  { useState } from 'react'
 import PortfolioCard from '../portfoliocard/PortfolioCard'
 import ProfileCard from '../profilecard/ProfileCard'
+import PostSide from '../PostSide/PostSide'
 import './ProfileMiddle.css'
 
 const ProfileMiddle = () => {
+    const [showPortfolio, setShowPortfolio] = useState(true);
+
     return (
         <div className = "profileMiddle">
             <ProfileCard />
             <div className="porfolioOrPosts">
-                <span> <b>Portfolio</b> </span>
+                <span onClick = {()=>setShowPortfolio(true)} > <b>Portfolio</b> </span>
                 <div className='vl'></div>
-                <span> <b>Posts</b> </span>
+                <span onClick = {()=>setShowPortfolio(false)} > <b>Posts</b> </span>
             </div>
-            <PortfolioCard />
+            {showPortfolio && <PortfolioCard />}
+            {!showPortfolio && <PostSide />}
         </div>
     )
 }
