@@ -75,14 +75,12 @@
     background-color: var(--cardColor);
     border-radius: 1rem;
     padding: 1rem;
+    width: 25rem;
+
 }
 
 .authForm>div{
     width: 100%;
     align-items: center;
     justify-content: center;
-}
-
-.login{
-    width: 25rem;
 }
