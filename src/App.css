@@ -45,7 +45,12 @@
   cursor: pointer;
   color: var(--orange);
   background: transparent;
-  border: 5px soild var(--orange); /* known bug, boarder not working*/
+  border: 2px soild var(--orange); /* known bug, boarder not working*/
+}
+
+.button:disabled {
+  background: silver;
+  pointer-events: none;
 }
 
 ::-webkit-scrollbar{
