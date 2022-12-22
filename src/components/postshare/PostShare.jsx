@@ -1,6 +1,5 @@
 import React, {useState, useRef} from 'react'
 import './PostShare.css'
-import ProfileImage from '../../img/profileImg.jpg'
 import {UilScenery} from "@iconscout/react-unicons"
 import {UilPlayCircle} from "@iconscout/react-unicons"
 import {UilLocationPoint} from "@iconscout/react-unicons"
@@ -17,6 +16,7 @@ const PostShare = () => {
     const imageRef = useRef()
     const desc = useRef()
     const {user} = useSelector((state)=>state.authReducer.authData)
+    const serverPublic = process.env.REACT_APP_PUBLIC_FOLDER
 
     const onImageChange =(event)=>{
         if (event.target.files && event.target.files[0]){
@@ -60,7 +60,7 @@ const PostShare = () => {
 
     return (
         <div className = "PostShare">
-            <img src={ProfileImage} alt='' />
+            <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultProfile.jpg"} alt='' />
             <div>
                 <input ref = {desc} required type = "text" placeholder="What's happening" />
                 <div className='postOptions'>

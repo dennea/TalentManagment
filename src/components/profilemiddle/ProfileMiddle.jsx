@@ -9,7 +9,7 @@ const ProfileMiddle = () => {
 
     return (
         <div className = "profileMiddle">
-            <ProfileCard />
+            <ProfileCard location = "profilePage"/>
             <div className="porfolioOrPosts">
                 <span onClick = {()=>setShowPortfolio(true)} > <b>Portfolio</b> </span>
                 <div className='vl'></div>

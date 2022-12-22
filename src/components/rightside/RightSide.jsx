@@ -5,16 +5,26 @@ import Noti from '../../img/noti.png'
 import Comment from '../../img/comment.png'
 import {UilSetting} from '@iconscout/react-unicons'
 import TrendCard from '../trendcard/TrendCard'
+import { Link } from 'react-router-dom'
+import { useDispatch } from 'react-redux'
+import { logout } from '../../actions/AuthAction'
 
 const RightSide = () => {
+    const dispatch = useDispatch()
+
+    const handleLogout = () =>{
+        dispatch(logout())
+    }
     return (
         <div className = "RightSide">
             <div className="navIcons">
-                <img src={Home} alt="" />
+                <Link to = '../home'>
+                    <img src={Home} alt="" />
+                </Link>
                 <UilSetting />
                 <img src={Noti} alt="" />
                 <img src={Comment} alt="" />
-                <button className='button'>Logout</button>
+                <button className='button' onClick = {handleLogout}>Logout</button>
             </div>
             <TrendCard />
         </div>
