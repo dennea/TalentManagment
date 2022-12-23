@@ -12,7 +12,10 @@ const ProfileCard = ({location}) => {
         <div className = "ProfileCard">
             <div className="ProfileImages">
                 <img src={user.coverPicture ? serverPublic + user.coverPicture : serverPublic + "defaultCover.jpg" } alt='' />
-                <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultProfile.jpg"} alt='' />
+                {location === "profilePage"? <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultProfile.jpg"} 
+                style = {{width : "10rem", height : "10rem"}} alt='' />: 
+                <img src={user.profilePicture ? serverPublic + user.profilePicture : serverPublic + "defaultProfile.jpg"} alt='' />}
+                
             </div>
             <div className='ProfileName'>
                 <span>{user.firstname}  {user.lastname}</span>
