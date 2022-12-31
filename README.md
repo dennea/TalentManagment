@@ -1,6 +1,7 @@
 # Description
 
 Back End: https://github.com/dennea/TalentManagementBackEnd
+Socket.io: https://github.com/dennea/socialMediaSocket
 
 # Motivation 
 
