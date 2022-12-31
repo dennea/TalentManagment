@@ -10,11 +10,19 @@ Socket.io: https://github.com/dennea/socialMediaSocket
 # Struggles 
 
 # Learnings
-React
-Redux 
-JavaScript 
-JWT
-express
+- React
+- Redux 
+- JavaScript 
+- JWT
+- express
+- socket.io
+
+# TODO
+- add portfilio and schedules to model profile pages
+- go to other accounts profiles
+- create a new chat when two accounts follow each other
+- be able to search for other users and posts (add tags?)
+- Create Agency/agent profiles
 
 # Getting Started with Create React App
 
