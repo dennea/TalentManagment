@@ -31,6 +31,25 @@
     background-size: 100%;
     background-repeat: repeat;
 
+    margin-bottom: 0%;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-background-clip: text;
+    -moz-text-fill-color: transparent;
+    padding-bottom: 0%;
+}
+
+.Webname>h5{
+    font-size: 0.85rem;
+    background-image: var(--buttonBg);
+
+    background-size: 100%;
+    background-repeat: repeat;
+
+    margin-top: 0;
+
+
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-background-clip: text;

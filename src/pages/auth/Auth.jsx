@@ -48,9 +48,10 @@ const Auth = () => {
     return (
         <div className="Auth">
             <div className="a-left">
-                <img src={Logo} alt="" />
+                {/*<img src={Logo} alt="" />*/}
                 <div className="Webname">
-                    <h1>NeaBobea Media</h1>
+                    <h1>Model Mania</h1>
+                    <h5>By Nea Media</h5>
                     <h6>Find your next opportunity</h6>
                 </div>
             </div>

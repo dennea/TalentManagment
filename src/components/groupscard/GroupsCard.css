@@ -10,7 +10,7 @@
 .GroupsCard>span{
     font-weight: bold;
     align-self: center;
-    color: orange;
+    color: rgb(224, 32, 224);;
     cursor: pointer;
 }
 

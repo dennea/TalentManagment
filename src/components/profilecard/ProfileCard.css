@@ -92,7 +92,7 @@
 
 .ProfileCard>span:nth-of-type(2) {
     font-weight: bold;
-    color: orange;
+    color: rgb(224, 32, 224);
     align-self: center;
     margin-bottom: 20px;
     cursor: pointer;
