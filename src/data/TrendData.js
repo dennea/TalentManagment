@@ -1,27 +1,27 @@
 export const TrendData = [
     {
-        name: "NYFW22",
-        shares: 32.1,
+        name: "Canada Goose",
+        date: "February 2nd 2023",
     },
     {
-        name: "IMG Scouting",
-        shares: 29,
+        name: "Ssense",
+        date: "March 2nd 2023",
     },
     {
-        name: "Gucci2023",
-        shares: 28.1,
+        name: "Gucci",
+        date: "April 2nd 2023",
     },
     {
-        name: "Gigi Hadid",
-        shares: 25,
+        name: "Mode event",
+        date: "June 2nd 2023",
     },
     {
-        name: "Runway101",
-        shares: 24.3,
+        name: "Music Video",
+        date: "Aug 2nd 2023",
     },
     {
-        name: "Ecomm101",
-        shares: 15.2,
+        name: "Western Canada Fashion Week",
+        date: "September 2nd 2023",
     },
     
 ]
